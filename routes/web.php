@@ -20,8 +20,8 @@ Route::middleware('auth:web')->group( function () {
         ]
     ]);
 
-    Route::get('url-check', 'TrackingController@checkUrls');
-
 });
+
+Route::get('url-check', 'TrackingController@checkUrls');
 
 require __DIR__.'/auth.php';
